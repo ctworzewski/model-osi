@@ -20,6 +20,24 @@ Potwierdzenie w TCP to ACK (Acknowledge)
 * TCP
 * UDP
 
-**TCP**
+## **TCP**
+### nawiązanie połączenie TCP
+
+* 1. Klient wysyła żadanie zainicjowania sesji klient-serwer z serwerem (chce korzystać z Twoich uslug, czy mogę? )
+* 2. Serwer przyjmuje sesję komunikacyjną klient serwer i wysyła żadanie zainicjowania sesji komunikacyjnej serwer-klient (serwer mówi, tak, niech będzie, zgadzam się, działamy?)
+* 3. Klient inicjujący potwierdza sesję komunikacyjną z serwera ( no to działamy)
+![Alt text](https://i.ibb.co/b3f3WQc/connecttcp.png "a title")
+
+Klient wysyła segment z pustą kopertą z 1 w polu SYN, apikacja serwerowa jak się zgodzi to odsyła pustą kopiertę, gdzie są dwie flagi SYN i ACK
+
+### Zakończenie sesji TCP
+
+* 1. Kiedy klient nie ma więcej danych do przesłąnia wysyła segment z ustawioną flagą FIN.
+* 2. Aby potwierdzić otrzymanie segmentu z ustawioną flagą FIN, serwer wysyła segment z ustawioną flagą ACK, co końćzy połączenie od klienta do serwera.
+* 3. W celu zakońćzenia sesji od serwera do klienta serwer wysyła segment z ustawioną flagą FIN do klienta.
+* 4. Aby potwierdzić otrzymanie segmentu z ustawioną flagą FIN od serwera, klient odpowiada segmentem z ustawioną flagą ACK.
+
+![Alt text](https://i.ibb.co/TBbBHXf/finishtcp.png "a title")
+
 **UDP**
 
