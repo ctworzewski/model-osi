@@ -1,6 +1,6 @@
-## warstwa-aplikaccji
+## warstwa aplikacji w TCP/IP
 
-### Będę opisywał czym jest, jak działa, przykłady użycia. Jest to tylko gromadzenie mojej wiedzy z notatkami. Więc błędy mogą się zdarzyć.
+Będę opisywał czym jest, jak działa, przykłady użycia. Jest to tylko gromadzenie mojej wiedzy z notatkami. Więc błędy mogą się zdarzyć.
 
 ### Warstwa aplikacji w modelu TCP/IP składa się z: 
 
