@@ -3,9 +3,10 @@
 ### Będę opisywał czym jest, jak działa, przykłady użycia. Jest to tylko gromadzenie mojej wiedzy z notatkami. Więc błędy mogą się zdarzyć.
 
 ### Warstwa aplikacji w modelu TCP/IP składa się z: 
-*warstwy aplikacji
-*warstwy prezentacji
-*warstwy sesji
+
+* warstwy aplikacji
+* warstwy prezentacji
+* warstwy sesji
 
 Co sie w nich dzieje opowiem za chwilę w kilku słowach...
 
