@@ -40,4 +40,22 @@ Klient wysyła segment z pustą kopertą z 1 w polu SYN, apikacja serwerowa jak 
 ![Alt text](https://i.ibb.co/TBbBHXf/finishtcp.png "a title")
 
 **UDP**
+W UDP nie ma nawiązania i zakońćzenia sesji, to kawał chama.
 
+### Porównianie z życia TCP i UDP
+Wygląda to tak:
+
+#### TCP
+Cześć, brat, jestes w domu, 
+Jestem
+CHciałbym wpasć do Ciebie, mogę?
+Możesz
+Ok, to będę
+Ok
+
+#### UDP
+To cham, nie pyta się przyjeżdza do brata, pomimo, że nie może to tak to wygląda
+
+# Three way handshake
+
+# Flagi kontrolne
