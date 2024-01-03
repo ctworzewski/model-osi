@@ -72,3 +72,27 @@ Zawsze klient łaczy sie z aplikacją serwera a nie na odwrót.
 Aplikacja kliencja zarezerwuje sobie dowolny nie zarezerwowany port
 
 ![Alt text](https://i.ibb.co/7ry9spm/porty.png "a title")
+
+Dobrze znane porty i porty zarejestrowane są przeznaczone dla aplikacji serwerowych.
+Skąd wiadomo na jakim porcie ma pracować aplikacja serwerowa?
+Bo porty nie są przydizelanie dla semej aplikacji jako tako, porty sa przydzielane protokołowi w.aplikacji.
+IANA dla protokołu HTTP przydzieliła port 80, dla HTTPS port 443.
+
+Dlaczego 80? A dlaczego masz na imię Maciej? Bo rodzice tak chcieli - IANA robiłą to w ten sam sposób.
+
+# Polecenie netstat
+`netstat - nab` polecenie  pokazuje wszystie połączenia stan LISTENING czyli coś nasłuchuje, aplikacja serwerowa??
+ESTABLISHED to znaczy że połączenie nawiąane przez nas, my połączyliśmy sie z kimś
+
+Każda osobna karta w Chromie to  inny port
+
+Nagłówki to to co wypisujemy na kopercie.
+Numer portu źródłowego i numer portu docelowego
+Numer sekwencyjny
+NUmer potwierdzenia
+Flagi kontrolne (FIN, ACK, RST....)
+
+# Mechanizmy kształotowania ruchu
+Jest w  TCP a nie ma w UDP
+
+![Alt text](https://i.ibb.co/zbBmQkd/oknoprzesuwne.png "a title")
