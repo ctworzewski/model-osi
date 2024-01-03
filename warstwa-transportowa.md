@@ -59,3 +59,16 @@ To cham, nie pyta się przyjeżdza do brata, pomimo, że nie może to tak to wyg
 # Three way handshake
 
 # Flagi kontrolne
+
+# Mechanizm portów
+Skąd warstwa transportowa ma wiedzieć, do któej aplikacji w ramach w.aplikacji ma przekazać.
+Rozwiązanie tego problemu jest takie samo w TCP i UDP  - to PORTY są to numery 80, 2055
+
+
+Porty jest podobieństwem do mieszkania.
+Adresy IP są blokiem mieszkalnym
+
+Zawsze klient łaczy sie z aplikacją serwera a nie na odwrót.
+Aplikacja kliencja zarezerwuje sobie dowolny nie zarezerwowany port
+
+![Alt text](https://i.ibb.co/7ry9spm/porty.png "a title")
