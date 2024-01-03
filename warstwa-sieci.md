@@ -38,5 +38,21 @@ Zawsze najpierw są 1 a potem 0-ra.
 * format długi - 255.128.0.0
 
 Im maska krótka /9 mniejsza tym więcej hostów można zaadresować, jeśli większa np. /24 to mniej hostów.
-  
+
+### Jak zrealizować komunikację pomiędzy sieciami lokalnymi?
+Komputer jeżeli wie , że ten drugi nie jest w  jego sieci lokalnej, to wie, że sam sobie nie poradzi to musi to wysłać to bramy domyślnej routera.
+Skąd PC wie, że ten drugi nie jest w jego lokalnej?
+
+Co robi ruter, że wie co ma zrobić dalej?
+Rutery stanowią na swój sposób logikę skrzyżowań. Tymi skrzyżowaniami są rutery,  kable idą od rutera do rutera.
+Jeśli dojdzie to do rutera to teraz on musi wiedzieć co z tym zrobić dalej.
+
+Planujemy jechać z Kielc do Torunia... ale jak
+Wsiadamy do auta jedziemy do pierwszego skrzyżowania, i co teraz prosto w lewo czy prawo?
+Na skrzyżowaniu są DROGOWSKAZY one mówią gdzie jechać
+Jesli pakiet wpływa do rutera to teraz gdzie go przesłać, mam kilka kabli, gdzie go przesłać co teraz?
+Drogowskazami w ruterach jest tablica routingu.
+
+**Routing** to jest **proces podejmowania decyzji odnośnie tego, któym interfjesem należy ten pakiet wypuścić** aby dojechał do wlasciwej sieci lokalnej i urządzenia końcowego
+
 W IPv6 nazywa się to inaczej, ale idea jest taka sama- mówimy o tym samym.
