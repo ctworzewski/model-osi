@@ -60,3 +60,6 @@ Drogowskazami w ruterach jest tablica routingu.
 Na rysunku - słuchaj stary jeżeli będziesz miał teraz pakiet zmierzający do takiej podsieci `192.168.10.0 255.255.255.0` to wyppuść go tym interfejsem `192.168.10.10`, zawsze jest podawany adres sieci z maską sieci
 
 W IPv6 nazywa się to inaczej, ale idea jest taka sama- mówimy o tym samym.
+
+
+## Wprowadzenie do routingu
