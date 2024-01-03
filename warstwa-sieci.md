@@ -36,5 +36,7 @@ Zawsze najpierw są 1 a potem 0-ra.
 # Formaty zapisu maski podsieci
 * format krótki - /9  zliczamy 1 binarne
 * format długi - 255.128.0.0
+
+Im maska krótka /9 mniejsza tym więcej hostów można zaadresować, jeśli większa np. /24 to mniej hostów.
   
 W IPv6 nazywa się to inaczej, ale idea jest taka sama- mówimy o tym samym.
