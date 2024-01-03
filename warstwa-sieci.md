@@ -28,5 +28,9 @@ Nie chcielbiysmy wpisyuwać adresu 1110000.100001.00000010.00001010
 Ilośc adresów IP?  = 2^32 około 4 miliardów, tyle adresów na potrzeby całego świata.
 
 Jeśli czesć sieci będzie 16bitowa, to 16 bitów będzie na adresacje hostów.
+
+Skąd wiadomo, jesli liczba ma 32bity to gdzie sie kończy czesć sieci, a gdzie zaczyna się częsci hosta - to właśnie wyznacze jest przez **maskę podsieci**.
+Tam gdzie są same 1 to to będzie część sieci
+Zawsze najpierw są 1 a potem 0-ra.
   
 W IPv6 nazywa się to inaczej, ale idea jest taka sama- mówimy o tym samym.
