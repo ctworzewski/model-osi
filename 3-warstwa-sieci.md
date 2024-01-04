@@ -65,14 +65,14 @@ W IPv6 nazywa się to inaczej, ale idea jest taka sama- mówimy o tym samym.
 ## Wprowadzenie do routingu
 
 ### Routing statyczny
- #### **Charakterystyka trasy statycznej:**
+ ### **Charakterystyka trasy statycznej:**
  * musi być skonfigurowany ręcznie
  * musi być ręcznie dostosowana przez admina jeśli nastapi zmiana topologii sieci
  * dobra dla małych sieci bez nadmiarowości
  * * jesli będzie awaria, autoamtycznie znajdzie alternatywną trasę
 
 ### Routing dynamiczny
-#### Dynamiczne routing automatycznie:
+### Dynamiczne routing automatycznie:
 * odkryje zdalne sieci
 * zaktualizuje informacje o trasach
 * wybierze najlepszą ścieżkę do miesjca docelowego
@@ -97,7 +97,7 @@ Mamy też alternatywne trasy do punktu, i trzeba ręcznie dodać alternatywy, bo
  * routing dynamiczny
 
 
-#### Istnieją trzy rodzaje tras w tablicy routingu routera:
+### Istnieją trzy rodzaje tras w tablicy routingu routera:
 * **bezpośrednio przyłączone** - trasy te są automatycznie dodawane przez router, pod warunkiem, że interfejs jest aktywny i ma adresowanie
 * **zdalne**
   * **dynamicznie** - za pomocą protokołu routingu
