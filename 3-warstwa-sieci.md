@@ -63,3 +63,25 @@ W IPv6 nazywa się to inaczej, ale idea jest taka sama- mówimy o tym samym.
 
 
 ## Wprowadzenie do routingu
+
+### Routing statyczny
+ #### **Charakterystyka trasy statycznej:**
+ * musi być skonfigurowany ręcznie
+ * musi być ręcznie dostosowana przez admina jeśli nastapi zmiana topologii sieci
+ * dobra dla małych sieci bez nadmiarowości
+
+Trzeba powiedzieć tak: słuchaj stary, chciałbym abyś do tablicy routingu  dodał nową trasę do tablicy routing, i ta trasa będzie mówić, że jeśli dostaniesz pakiet, który należy do takiej a nie innej podsieci czyli `10.1.1.0 255.255.255.0` to wyślij go tym interfejsem, albo adresem następnego przeskoku `209.165.200.226`
+
+![Alt text](https://i.ibb.co/0Q6n2MZ/nexthop.png "a title")
+
+Co to jest next hop?
+To jest następny przeskok, przeskokiem jest skakanie od routera do rutera.
+ Skąd się biorą wpisy w tablicy routingu?
+
+
+
+ Są 3 spospoby na to skąd się biorą wpisy w tablicy:
+ * wpisałem z palca ten wpis, to sie nazywa **routing statyczny**
+
+ 
+
