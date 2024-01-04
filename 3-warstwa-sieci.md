@@ -1,4 +1,4 @@
-# warstwa sieci
+``# warstwa sieci
 
 Warstwa aplikacji stworzyła wiadomość, potem przesłało to do warstwy transportowej - z kolei warstwa transportowa podzieliła wiadomość na segmenty lub datagramy, nadała port źrodłowy i docelowy, numery sekwencyjne...
 Wszystko pięknie, bo teraz wiadomo do jakiej aplikacji ma to zostać przesłane, **ale nie wiadomo do jakiego urządzenia**. 
@@ -69,6 +69,15 @@ W IPv6 nazywa się to inaczej, ale idea jest taka sama- mówimy o tym samym.
  * musi być skonfigurowany ręcznie
  * musi być ręcznie dostosowana przez admina jeśli nastapi zmiana topologii sieci
  * dobra dla małych sieci bez nadmiarowości
+ * * jesli będzie awaria, autoamtycznie znajdzie alternatywną trasę
+
+### Routing dynamiczny
+#### Dynamiczne routing automatycznie:
+* odkryje zdalne sieci
+* zaktualizuje informacje o trasach
+* wybierze najlepszą ścieżkę do miesjca docelowego
+* znajdzie nowe najlepsze ścieżki, gdy nastapi zmiana topologii
+* jesli będzie awaria, autoamtycznie znajdzie alternatywną najlepszą trasę.
 
 Trzeba powiedzieć tak: słuchaj stary, chciałbym abyś do tablicy routingu  dodał nową trasę do tablicy routing, i ta trasa będzie mówić, że jeśli dostaniesz pakiet, który należy do takiej a nie innej podsieci czyli `10.1.1.0 255.255.255.0` to wyślij go tym interfejsem, albo adresem następnego przeskoku `209.165.200.226`
 
@@ -76,12 +85,23 @@ Trzeba powiedzieć tak: słuchaj stary, chciałbym abyś do tablicy routingu  do
 
 Co to jest next hop?
 To jest następny przeskok, przeskokiem jest skakanie od routera do rutera.
+
+Dla małych sieci jest ok, ale dla 15-20 routerów kiepsko.
+Mamy też alternatywne trasy do punktu, i trzeba ręcznie dodać alternatywy, bo jeśli na danej trasie będzie  awaria to trzeba mieć alternatywne połączenie.
  Skąd się biorą wpisy w tablicy routingu?
 
 
 
  Są 3 spospoby na to skąd się biorą wpisy w tablicy:
  * wpisałem z palca ten wpis, to sie nazywa **routing statyczny**
+ * routing dynamiczny
 
+
+#### Istnieją trzy rodzaje tras w tablicy routingu routera:
+* **bezpośrednio przyłączone** - trasy te są automatycznie dodawane przez router, pod warunkiem, że interfejs jest aktywny i ma adresowanie
+* **zdalne**
+  * **dynamicznie** - za pomocą protokołu routingu
+  * **ręcznie** - przy pomocy trasy statycznej
+* **domyślna trasa** - przesyła cały ruch w okreslonym kierunku, gdy nie ma dopasowania w tablicy routingu
  
 
