@@ -1,4 +1,4 @@
-``# warstwa sieci
+# warstwa sieci
 
 Warstwa aplikacji stworzyła wiadomość, potem przesłało to do warstwy transportowej - z kolei warstwa transportowa podzieliła wiadomość na segmenty lub datagramy, nadała port źrodłowy i docelowy, numery sekwencyjne...
 Wszystko pięknie, bo teraz wiadomo do jakiej aplikacji ma to zostać przesłane, **ale nie wiadomo do jakiego urządzenia**. 
@@ -103,5 +103,17 @@ Mamy też alternatywne trasy do punktu, i trzeba ręcznie dodać alternatywy, bo
   * **dynamicznie** - za pomocą protokołu routingu
   * **ręcznie** - przy pomocy trasy statycznej
 * **domyślna trasa** - przesyła cały ruch w okreslonym kierunku, gdy nie ma dopasowania w tablicy routingu
- 
+
+## Adresowanie IPv4
+
+O tym gdzie kończy sie cześć sieci adresu IP mówi  maska podsieci
+
+### Rodzaje adresów IPv4
+* **publiczne**
+  * 
+* **prywatne**
+  * adresy prywatne to bloku adresów używanych przez większość organizacji do przypisywania adresów IPv4 do hostów wewnętrznych
+  * prywatne adresy IPv4 ie są unikalne i mogą być używane wewnętrznie w dowolnej sieci
+  * adresy prywatne nie są globalnie rutowane
+    ![Alt text](https://i.ibb.co/0K3BBS1/privateip.png "a title")
 
