@@ -130,5 +130,11 @@ O tym gdzie kończy sie cześć sieci adresu IP mówi  maska podsieci
   ## NAT
   ........
 
-  ##
+  ## Systemy do tworzenia obrazów i oprogramowania
+  * Clonezilla
+  * LAN PXE
+ 
+  * Lepiej robić odtwarzanie systemów MULTICASTEM
+    bo,
+    słuchaj stary, będziemy odtwarzać system aplikacje na 20 PC więc ja pojde do PC, wprowadze w stan odtwarzania, jesli wstanie 20, to puszczaj  system, jest to jedno połączenie, które idzie do wszystkich... więc nie ma zatorowości sieci itp
 
