@@ -110,7 +110,7 @@ O tym gdzie kończy sie cześć sieci adresu IP mówi  maska podsieci
 
 ### Rodzaje adresów IPv4
 * **publiczne**
-  * 
+  * publiczne adresy IPv4 są globalnie routowane między routerami dostawcy usług internetowych (ISP)
 * **prywatne**
   * adresy prywatne to bloku adresów używanych przez większość organizacji do przypisywania adresów IPv4 do hostów wewnętrznych
   * prywatne adresy IPv4 ie są unikalne i mogą być używane wewnętrznie w dowolnej sieci
