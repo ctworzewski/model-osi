@@ -111,10 +111,17 @@ O tym gdzie kończy sie cześć sieci adresu IP mówi  maska podsieci
 ### Rodzaje adresów IPv4
 * **publiczne**
   * publiczne adresy IPv4 są globalnie routowane między routerami dostawcy usług internetowych (ISP)
+    * **stały** - to znaczy, że długoterminowo, nie na zawsze, długoterminoo nasze urządzenie ma ten sam adres IP
+    * **zmienne** - jakąś chwile sie zmienia, to że adres się zmienia bierze się z tego, że wykorzystujemy usługę DHCP (pozwala na to, aby automatycznie przydizeląło IP, GW, DNS)
 * **prywatne**
   * adresy prywatne to bloku adresów używanych przez większość organizacji do przypisywania adresów IPv4 do hostów wewnętrznych
   * prywatne adresy IPv4 ie są unikalne i mogą być używane wewnętrznie w dowolnej sieci
   * adresy prywatne nie są globalnie rutowane
     
     ![Alt text](https://i.ibb.co/0K3BBS1/privateip.png "a title")
+
+  ## NAT
+  ........
+
+  ##
 
