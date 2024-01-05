@@ -115,5 +115,6 @@ O tym gdzie kończy sie cześć sieci adresu IP mówi  maska podsieci
   * adresy prywatne to bloku adresów używanych przez większość organizacji do przypisywania adresów IPv4 do hostów wewnętrznych
   * prywatne adresy IPv4 ie są unikalne i mogą być używane wewnętrznie w dowolnej sieci
   * adresy prywatne nie są globalnie rutowane
+    
     ![Alt text](https://i.ibb.co/0K3BBS1/privateip.png "a title")
 
