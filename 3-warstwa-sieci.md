@@ -117,6 +117,13 @@ O tym gdzie kończy sie cześć sieci adresu IP mówi  maska podsieci
   * adresy prywatne to bloku adresów używanych przez większość organizacji do przypisywania adresów IPv4 do hostów wewnętrznych
   * prywatne adresy IPv4 ie są unikalne i mogą być używane wewnętrznie w dowolnej sieci
   * adresy prywatne nie są globalnie rutowane
+ 
+    DDNS - tą usługę musi wspierać router.
+
+### Rodzaje adresów IPv4 cd.
+* Unicast - transmisja pojedyncza wiysyła pakiet do jednego docelowego adresu IP
+* Broadcoasty - transmisja rozgłoszeiowa jest wysyłaniem pakietu do wszystkich innych docelowych adresów IP
+* Multicast - transisja grupowa jest wysyłaniem pakietu do grupy adresatów
     
     ![Alt text](https://i.ibb.co/0K3BBS1/privateip.png "a title")
 
