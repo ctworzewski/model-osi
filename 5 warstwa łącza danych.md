@@ -55,6 +55,8 @@ Siłą nowego Ethernetu są urządzenia zwane SWITCHAMI
 Rolą koncetratora jest taka sama jak switcha. Miał podobną logikę, dzielił sieć na różne segmenty.
 
 Dzięki PRZEŁĄCZNIKOWI transmisja jest full-duplex - TX i RX jest taka sama.
+
+### Przełącznik posiada tablice adresów MAC
   
   
   
