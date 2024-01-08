@@ -2,5 +2,5 @@
 * Protokół ICMP to protokoół kontrolno diagnostyczny...
 
   Ciekawa anegdota:
-![Alt text](https://ibb.co/zmL3cPD "a title")
+![Alt text](https://i.ibb.co/NFk0hWb/icmp.png "ICMP")
 Załóżmy, że komputer
