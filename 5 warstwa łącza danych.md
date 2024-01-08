@@ -48,6 +48,13 @@ Można powiedzieć, że topologie logiczne rozwiązuje problem rywalizacji i nie
 
   Żeby oszacować, czy PC jest w sieci lokalnej, jeśli poza to w ramach protkołu ARP zrealizuje się to zapytanie, ale o adres bramy domyślnej. 
 
+
+## Przełączanie w sieciach Ethernet
+
+Siłą nowego Ethernetu są urządzenia zwane SWITCHAMI
+Rolą koncetratora jest taka sama jak switcha. Miał podobną logikę, dzielił sieć na różne segmenty.
+
+Dzięki PRZEŁĄCZNIKOWI transmisja jest full-duplex - TX i RX jest taka sama.
   
   
   
