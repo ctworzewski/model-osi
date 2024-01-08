@@ -40,6 +40,13 @@ Każdy system wstawia inną liczbę np:
 Założmy, że wysyłamy pakiet z wartością początkową TTL=128, co się dzieje dalej... jeśli przechodzi ten pakiet przez router, to router w tym momencie ma obowiązek pomniejszyć to pole TTL o 1 przed wypuszczeniem tego pakietu dalej.
 Po zrealizowaniu procesu routingu ale przed wypuszczeniem dalej pakietu IP musi pomniejszyć o jeden. Jeśli router dostanie pakiet, gdzie jest ustawione pole TTL=1 to on teraz pomniejsza to o 1, i TTL=0. Jesli jest 0, to teraz on musi wyrzucić to do kosza i nie może przesłać już dalej.
 
+### Tracert
+Polecenie służy po to jeśli chcemy się dowiedzieć przez jaką transmisje przechodzi między naszym komputerem a serwerem googla.
+Pokazuje ile routerów jest po drodze.
 
+![Alt text](https://i.ibb.co/qBQN3bZ/tracert.png "ICMP")
 
-  
+Rozwiązuje problemy?
+- nie ma Internetu więc sprawdzam dlaczego, może kabel wyciągnięty z gniazdka
+- 1, 2,3 się odzywa a potem `*`,  to gwaizdka pokazuje, że po tym ruterze 3 jest awaria...
+
