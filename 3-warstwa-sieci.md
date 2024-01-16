@@ -138,3 +138,20 @@ O tym gdzie kończy sie cześć sieci adresu IP mówi  maska podsieci
     bo,
     słuchaj stary, będziemy odtwarzać system aplikacje na 20 PC więc ja pojde do PC, wprowadze w stan odtwarzania, jesli wstanie 20, to puszczaj  system, jest to jedno połączenie, które idzie do wszystkich... więc nie ma zatorowości sieci itp
 
+
+_____________________________________________________________________________________________________________________
+
+
+# Cechy warstwy sieci
+## Warstwa sieci
+
+Warstwa sieci zapewnia usługi umożliwiające urządzenion końcowym  wymianę danych między sieciami.
+
+IPv4 i IPv6 są protokołami komunikacji warstwy sieci.
+
+Inne protokoł obejmują protokoły routiungu  tj. OSPF i protokoły komunikacyjne tj. ICMP
+
+### Aby osiągnąć komunikację między granicami sieci, protokoły warstwy sieci wykonują cztery podstawowe operacje:
+* **Adresowanie urządzęń końcowych**
+* **Enkapsulacja**
+* **Routing**
