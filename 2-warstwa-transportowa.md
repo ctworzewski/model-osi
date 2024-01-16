@@ -8,6 +8,32 @@
 * **identyfikacja apikacji** -  warstwa transportu musi w jednym czasie zarządzać wieloma połączeniami jednocześńnie i dzielić dane, które należa do różnych aplikacji. Warstwa transportu  identyfikuję aplikację docelową za pomocą  id zwanego numerem portu.
 * **multipleksowanie konwersacji** - umożlwia przeplatanie wysyłanych danych, wideo, www, voip
 
+## __Protokół TCP__
+TCP uważany jest za "wiarygodny", który gwarantuje dostarczenie wiadomości
+* **Protokół TCP dzieli dane na segmenty**
+* transport z użyciem TCP można porównać jako transport, gdzie pakiety są śledzone od źródła do celu
+* jest wolniejszy od UDP, bo są potwierdzenia itp...
+
+  TCP zapewnia niezawodność i kontrolę przepłwu za pomocą:
+  * numerowania i śledzenie segmentów
+  * potwierdzanie odbioru danych
+  * ponowne przesyłanie niepotwierdzonych danych po upływie okreslonego czasu
+  * sekwencjonowanie danych, jeśli pojawią się w złej kolejności
+  * wysyłanie danych w odpowiednim tempie, który jest akceptowalny przez odbiorcę
+
+W celu utrzymania stanu konwersacji i śledzenia informacji, TCP musi najpierw ustanowić połączenie między nadawcą a odbiorcą - dlateog uwżany jest jako protokół połączeniowy.
+
+## __Protokół UDP__
+* nie zapewnia niezawodności i kontroli przepływu, wiec wymaga mniejszej liczby pól nagłowka
+* datagramy UDP mogą byc przetwarzanie szybciej niż segmenty TCP
+* jest protokołem bezpołączeniowym
+* nie zapewnia niezawodności i kontroli przepływu więc nie wymaga zestawienia połączenia  jak TCP
+* nie ślezdi informacji wysyłanych i odbieranych między klientem a serwerem
+* znany również jako _protokół działający na zasadzie najlepszych środków (best-effort)_ , czyli nie ma potwierdzeń żę dane są odbierane w miescu docelowym
+* brak potwierdzeń
+
+Można porównać działanie UDP do zwyklego listu - czyli nadawca nie jest świadomy czy czy lsit dotrze do odboircy
+
 ## Problemy warstwy transportowej:
 * film, który zajmuje 60GB 4K, MKV pojawiają sie problemy i jak to rozwiązać
 
