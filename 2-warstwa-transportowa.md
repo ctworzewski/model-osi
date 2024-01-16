@@ -1,5 +1,13 @@
 # Warstwa transportowa
 
+## __Zadania warstwy transportowej:__
+* **śledzenie indywidualnych konwersacji** - w tej warstwie każdy zestaw danych przepływający między aplkacją źródłową a docelową nazywany jest konwersacja i jest śledzony osobno. Funkcją w.transportowej jest utrzymanie i śledzenie konwersacji. Host (komputer PC) możze mieć wiele aplikacji komunikujących się w sieci jednocześnie (email, whatsapp, www, widoe czat, youtube)
+* **segmentacja i powtórne składanie pakietów dnych** - dane aplikacji dzielone są na bloki o odpowiedniej wielkości, co jest obowiązkiem warstwy transportowej. Bloki te nazywane są _segmentami_ lub _datagrami_, w zależności o użytego protokołu. Wówczas bloki te, są łatwiejsze do zarządzania i transportu.
+* **dodawanie informacji nagłówka** - protokły warstwy transportu dodają informację nagłówka, które zawierają dane binarne zorganizoane w kilka pól. Nagłowek wykorzystywany jest przez host odbierający do ponownego złożenia bloków danych w kompletny strumieńdanych dla warstwy aplikacji.
+  Przy wielu aplikacjach uruchomionych jednocześnie, dane docierają poprawnie do każej z aplikacji.
+* **identyfikacja apikacji** -  warstwa transportu musi w jednym czasie zarządzać wieloma połączeniami jednocześńnie i dzielić dane, które należa do różnych aplikacji. Warstwa transportu  identyfikuję aplikację docelową za pomocą  id zwanego numerem portu.
+* **multipleksowanie konwersacji** - umożlwia przeplatanie wysyłanych danych, wideo, www, voip
+
 ## Problemy warstwy transportowej:
 * film, który zajmuje 60GB 4K, MKV pojawiają sie problemy i jak to rozwiązać
 
