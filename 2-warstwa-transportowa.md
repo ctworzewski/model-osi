@@ -134,7 +134,8 @@ Nieznane połączenie TCP mogą być naruszeniem bezpieczeńśtwa, mogą wskazyw
 `netstat - nab` polecenie  pokazuje wszystie połączenia stan LISTENING czyli coś nasłuchuje, aplikacja serwerowa??
 ESTABLISHED to znaczy że połączenie nawiąane przez nas, my połączyliśmy sie z kimś
 
-```C:\> netstat
+```
+C:\> netstat
 Active Connections
   Proto  Local Address          Foreign Address            State
   TCP    192.168.1.124:3126     192.168.0.2:netbios-ssn    ESTABLISHED
@@ -144,7 +145,9 @@ Active Connections
   TCP    192.168.1.124:3161     sc.msn.com:http            ESTABLISHED
   TCP    192.168.1.124:3166     www.cisco.com:http         ESTABLISHED
 (output omitted)
-C:\>```
+C:\>
+```
+
 
 Każda osobna karta w Chromie to  inny port
 
