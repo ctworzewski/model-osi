@@ -98,6 +98,20 @@ To cham, nie pyta się przyjeżdza do brata, pomimo, że nie może to tak to wyg
 Skąd warstwa transportowa ma wiedzieć, do któej aplikacji w ramach w.aplikacji ma przekazać.
 Rozwiązanie tego problemu jest takie samo w TCP i UDP  - to PORTY są to numery 80, 2055
 
+Dzięki portom możemy zarządzać wieloma, jednoczesnymi konwersacjami.
+
+Pola nagłówka TCP i UDP identyfikują numery portów aplikacji źródłowej i docelowej. Mamy więc:
+* port źrodłowy (16)
+* port docelowy (16)
+
+Port źródłowy powiązany jest z aplikacją źródłową na hoście loklanymm a numer portu docelowego jest z aplikacją docelową (serwer www, ftp...)
+
+**Pary gniazd (socket)** jest to kombinacja adresu IP i numeru portu (źrodłowy i docelowy)
+
+Gniazdo używane jest do identyfikacji serwera i usług żądanych przez klienta. Przykładowe gniazdo u klienta, reprezentujące port 1099 może mieć postać: 192.168.1.5:1099
+Natomiast gniazdo docelowo na serwerze może wyglądać tak: 192.168.1.7:80
+Razem, obydwa tworzą parę gniazd: 192.168.1.5:1099, 192.168.1.7:80
+Gniazda umożliwiają rozróżnianie wielu procesów działających u klienta oraz rozróżnianie wielu połączeń z procesami serwera.
 
 Porty jest podobieństwem do mieszkania.
 Adresy IP są blokiem mieszkalnym
@@ -115,8 +129,22 @@ IANA dla protokołu HTTP przydzieliła port 80, dla HTTPS port 443.
 Dlaczego 80? A dlaczego masz na imię Maciej? Bo rodzice tak chcieli - IANA robiłą to w ten sam sposób.
 
 # Polecenie netstat
+Nieznane połączenie TCP mogą być naruszeniem bezpieczeńśtwa, mogą wskazywać, że ktoś nasłuchuje a nie powinien.
+
 `netstat - nab` polecenie  pokazuje wszystie połączenia stan LISTENING czyli coś nasłuchuje, aplikacja serwerowa??
 ESTABLISHED to znaczy że połączenie nawiąane przez nas, my połączyliśmy sie z kimś
+
+```C:\> netstat
+Active Connections
+  Proto  Local Address          Foreign Address            State
+  TCP    192.168.1.124:3126     192.168.0.2:netbios-ssn    ESTABLISHED
+  TCP    192.168.1.124:3158     207.138.126.152:http       ESTABLISHED
+  TCP    192.168.1.124:3159     207.138.126.169:http       ESTABLISHED
+  TCP    192.168.1.124:3160     207.138.126.169:http       ESTABLISHED
+  TCP    192.168.1.124:3161     sc.msn.com:http            ESTABLISHED
+  TCP    192.168.1.124:3166     www.cisco.com:http         ESTABLISHED
+(output omitted)
+C:\>```
 
 Każda osobna karta w Chromie to  inny port
 
