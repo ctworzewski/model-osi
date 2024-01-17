@@ -91,8 +91,20 @@ Ok
 To cham, nie pyta się przyjeżdza do brata, pomimo, że nie może to tak to wygląda
 
 # Three way handshake
+Oto, funkcje trójetapowego uzgadniania:
+* ustala czy urządzenie jest docelowe w sieci, aktywne.
+* sprawdza czy urządzenie docelowe (serwer) ma katywną usugę i akceptuje połączenie na porcie, które klient inicjuje
+* informuje urządzenie docelowe żeurządzenie inicjujące zamierza ustanowić połączeniena porcie o tym numerze.
 
-# Flagi kontrolne
+## Flagi kontrolne
+
+**Sześć flag bitów kontrolnych to:**
+* URG - flaga, która wskazuje na ważność pola pilny w nagłówku TCP;
+* ACK - flaga potwierdzenia używana w ustanawianiu połączenia i zakończeniu sesji
+* PSH - flaga, która oznacza wykorzystanie funkcji PUSH;
+* RST - Resetuj połączenie, gdy wystąpi błąd lub limit czasu
+* SYN - Synchronizuj numery sekwencji używane w ustanawianiu połączeń
+* FIN - Brak więcej danych od nadawcy i używane w zakończaniu sesji
 
 # Mechanizm portów
 Skąd warstwa transportowa ma wiedzieć, do któej aplikacji w ramach w.aplikacji ma przekazać.
